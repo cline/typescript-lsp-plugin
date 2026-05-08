@@ -1,4 +1,4 @@
-# TypeScript Navigation Plugin for Cline CLI
+# TypeScript LSP Plugin for Cline CLI
 
 A [Cline CLI](https://github.com/cline/cline) plugin that gives Cline a `goto_definition` tool powered by the TypeScript Language Service API.
 
