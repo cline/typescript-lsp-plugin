@@ -7,13 +7,13 @@ Instead of relying on grep or text search, this plugin resolves symbol definitio
 ## Install
 
 ```bash
-clite plugin install https://github.com/cline/typescript-lsp-plugin.git
+cline plugin install https://github.com/cline/typescript-lsp-plugin.git
 ```
 
 Verify it's loaded:
 
 ```bash
-clite config  # check the plugin tab
+cline config  # check the plugin tab
 ```
 
 ## How it works
@@ -34,7 +34,7 @@ TypeScript itself is resolved from the target project's `node_modules` at runtim
 Given a file with this import on line 4:
 
 ```typescript
-import { disposeAll, initVcr } from "@clinebot/shared"
+import { disposeAll, initVcr } from "@cline/shared"
 ```
 
 The plugin resolves both symbols through the workspace package alias:
