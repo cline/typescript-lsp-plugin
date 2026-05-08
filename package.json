@@ -1,0 +1,26 @@
+{
+	"name": "@cline/typescript-lsp-plugin",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Cline plugin that provides go-to-definition using the TypeScript Language Service API",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"cline": {
+		"plugins": [
+			{
+				"paths": ["./src/index.ts"],
+				"capabilities": ["tools"]
+			}
+		]
+	},
+	"peerDependencies": {
+		"@cline/core": "*"
+	},
+	"peerDependenciesMeta": {
+		"@cline/core": {
+			"optional": true
+		}
+	}
+}
